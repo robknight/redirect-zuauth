@@ -21,7 +21,7 @@ if (proofFromUrl) {
 
 
 document.getElementById("get-proof")?.addEventListener("click", async () => {
-  const proof = zuAuthRedirect({
+  zuAuthRedirect({
     returnUrl: window.location.href,
     watermark: "1234",
     config: [
@@ -406,5 +406,4 @@ document.getElementById("get-proof")?.addEventListener("click", async () => {
       revealProductId: true,
     },
   });
-  console.log(proof);
 });
